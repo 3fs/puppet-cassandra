@@ -201,22 +201,22 @@ class cassandra::params {
     }
 
     $incremental_backups = $::cassandra_incremental_backups ? {
-        undef   => 'false',
+        undef   => false,
         default => $::cassandra_incremental_backups,
     }
 
     $snapshot_before_compaction = $::cassandra_snapshot_before_compaction ? {
-        undef   => 'false',
+        undef   => false,
         default => $::cassandra_snapshot_before_compaction,
     }
 
     $auto_snapshot = $::cassandra_auto_snapshot ? {
-        undef   => 'true',
+        undef   => true,
         default => $::cassandra_auto_snapshot,
     }
 
     $multithreaded_compaction = $::cassandra_multithreaded_compaction ? {
-        undef   => 'false',
+        undef   => false,
         default => $::cassandra_multithreaded_compaction,
     }
 
@@ -236,7 +236,7 @@ class cassandra::params {
     }
 
     $start_native_transport = $::cassandra_start_native_transport ? {
-        undef   => 'false',
+        undef   => false,
         default => $::cassandra_start_native_transport,
     }
 
@@ -246,7 +246,7 @@ class cassandra::params {
     }
 
     $start_rpc = $::cassandra_start_rpc ? {
-        undef   => 'true',
+        undef   => true,
         default => $::cassandra_start_rpc,
     }
 
@@ -261,7 +261,7 @@ class cassandra::params {
     }
 
     $service_enable = $::cassandra_service_enable ? {
-        undef   => 'true',
+        undef   => true,
         default => $::cassandra_service_enable,
     }
 
