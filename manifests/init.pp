@@ -47,7 +47,9 @@ class cassandra(
     $thread_stack_size          = $cassandra::params::thread_stack_size,
     $service_enable             = $cassandra::params::service_enable,
     $service_ensure             = $cassandra::params::service_ensure
-) inherits cassandra::params {
+) {
+    include cassandra::params
+
     # Validate input parameters
     validate_bool($include_repo)
 
