@@ -1,3 +1,4 @@
+# This is our main init class
 class cassandra(
     $package_name               = $cassandra::params::package_name,
     $version                    = $cassandra::params::version,

@@ -1,3 +1,4 @@
+# This class defines repository on Redhat systems
 class cassandra::repo::redhat(
     $repo_name,
     $baseurl,

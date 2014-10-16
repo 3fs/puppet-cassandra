@@ -1,3 +1,4 @@
+# This class has default config params defined
 class cassandra::params {
     $include_repo = $::cassandra_include_repo ? {
         undef   => true,

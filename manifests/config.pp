@@ -1,3 +1,4 @@
+# This class does configuration
 class cassandra::config(
     $version,
     $config_path,

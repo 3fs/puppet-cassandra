@@ -1,3 +1,4 @@
+# This class defines repository on Debian systems
 class cassandra::repo::debian(
     $repo_name,
     $location,

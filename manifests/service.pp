@@ -1,3 +1,4 @@
+# This class defines service
 class cassandra::service(
   $service_enable,
   $service_ensure

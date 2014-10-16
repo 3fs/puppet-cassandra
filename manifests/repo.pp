@@ -1,3 +1,4 @@
+# This class defines repositories
 class cassandra::repo (
     $repo_name,
     $baseurl,

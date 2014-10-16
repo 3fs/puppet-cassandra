@@ -1,3 +1,4 @@
+# This class does actual installation
 class cassandra::install {
 
     if !defined (Package['java']) {
