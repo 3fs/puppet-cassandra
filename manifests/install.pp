@@ -2,8 +2,8 @@ class cassandra::install {
 
     if !defined (Package['java']) {
       package { 'java':
-        ensure  => installed,
-        name    => 'openjdk-7-jre'
+        ensure => installed,
+        name   => 'openjdk-7-jre'
       }
     }
 
