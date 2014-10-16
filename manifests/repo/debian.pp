@@ -25,7 +25,7 @@ class cassandra::repo::debian(
     notice("cassandra will be pinned to ${version_pin}")
 
       apt::pin { "hold_cassandra_at_${version_pin}":
-        packages => "cassandra",
+        packages => 'cassandra',
         version  => $version_pin,
         priority => 1001,
       }
